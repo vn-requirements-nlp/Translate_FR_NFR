@@ -9,10 +9,10 @@ pip install -r requirements.txt
 
 # Step 04: Translate (chỉnh batch_size tương ứng với số câu muốn dịch 1 phiên)
 python translate_requirements.py `
-  --in_txt Dataset_Full.txt `
+  --in_txt Dataset_Full_EN.txt `
   --out_txt Dataset_Full_Vietnamese.txt `
   --model gpt-5-mini `
   --batch_size 150
 
 # Step 05: Resume khi bị ngưng
-python translate_requirements.py --in_txt Dataset_Full.txt --out_txt Dataset_Full_Vietnamese.txt --resume
+python translate_requirements.py --in_txt Dataset_Full_EN.txt --out_txt Dataset_Full_VI.txt --resume
